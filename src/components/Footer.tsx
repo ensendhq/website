@@ -1,15 +1,22 @@
 import React from 'react';
 import Container from './Container';
 import { Twitter, Github, Mail, Bitcoin } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext';
 
 const Footer: React.FC = () => {
+   const { theme } = useTheme();
+   
+   const logoSrc = theme === 'dark' 
+    ? '/ensend-logo-v0.0.1-dark.png'
+    : '/ensend-logo-v0.0.1.png';
+
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 py-12 mt-16">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Bitcoin className="h-7 w-7 text-orange-500" />
+              <img src={logoSrc} alt="EnSend" className="h-8" />
               <span className="text-xl font-bold text-gray-900 dark:text-gray-100">EnSend</span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md">
@@ -20,11 +27,11 @@ const Footer: React.FC = () => {
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </a>
-              <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors">
+              <a href="https://github.com/ensendhq" target="_blank" className="text-gray-500 hover:text-orange-500 transition-colors">
                 <Github size={20} />
                 <span className="sr-only">GitHub</span>
               </a>
-              <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors">
+              <a href="ensend.xyz@gmail.com" target="_blank" className="text-gray-500 hover:text-orange-500 transition-colors">
                 <Mail size={20} />
                 <span className="sr-only">Email</span>
               </a>
