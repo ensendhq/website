@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
                 <Github size={20} />
                 <span className="sr-only">GitHub</span>
               </a>
-              <a href="ensend.xyz@gmail.com" target="_blank" className="text-gray-500 hover:text-orange-500 transition-colors">
+              <a href="mailto:ensend.xyz@gmail.com" target="_blank" className="text-gray-500 hover:text-orange-500 transition-colors">
                 <Mail size={20} />
                 <span className="sr-only">Email</span>
               </a>
