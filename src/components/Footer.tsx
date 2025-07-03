@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               Combining secure Bitcoin transactions with decentralized messaging, designed to meet tomorrow's cryptographic challenges.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors">
+              <a href="https://x.com/Ensend_btc" target="_blank" className="text-gray-500 hover:text-orange-500 transition-colors">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </a>
