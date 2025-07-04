@@ -32,8 +32,8 @@ const Navbar: React.FC = () => {
   ];
 
   const logoSrc = theme === 'dark' 
-    ? '/ensend-logo-v0.0.1-dark.png'
-    : '/ensend-logo-v0.0.1.png';
+    ? '/ensend-logo-dark.png'
+    : '/ensend-logo-light.png';
 
   return (
     <nav className={navbarClasses}>

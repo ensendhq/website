@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
    const { theme } = useTheme();
    
    const logoSrc = theme === 'dark' 
-    ? '/ensend-logo-v0.0.1-dark.png'
-    : '/ensend-logo-v0.0.1.png';
+    ? '/ensend-logo-dark.png'
+    : '/ensend-logo-light.png';
 
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 py-12 mt-16">
